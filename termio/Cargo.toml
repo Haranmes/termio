@@ -1,0 +1,10 @@
+[package]
+categories = ["gui"]
+description = "Cross-platform terminal emulator"
+name = "termio"
+
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+

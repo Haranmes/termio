@@ -1,0 +1,8 @@
+[package]
+description = "Windows implementation of termio"
+name = "termio-windows"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gtk.workspace = true
