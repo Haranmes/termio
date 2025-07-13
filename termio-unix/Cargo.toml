@@ -5,4 +5,3 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-gtk.workspace = true

@@ -1,6 +1,6 @@
 [workspace]
 default-member = ["termio"]
-members = ["termio"]
+members = ["termio", "termio-unix", "termio-windows"]
 resolver = "1"
 
 [workspace.package]
@@ -11,6 +11,5 @@ edition = "2024"
 [workspace.dependencies]
 termio = { path = "termio"}
 nix = { version = "0.30.1", features = ["hostname", "term"] }
-termio-windows = { path = "termio-windows" }
-termio-unix = { path = "termio-unix" }
 gtk = { version = "0.9.7", package = "gtk4" }
+termio-ui = { path = "termio-ui"}
