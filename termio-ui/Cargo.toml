@@ -1,0 +1,8 @@
+[package]
+description = "Termio's UI Implementation"
+name = "termio-ui"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gtk.workspace = true
