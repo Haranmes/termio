@@ -1,6 +1,8 @@
 use gtk::{glib, prelude::*, Application, ApplicationWindow, Orientation, ScrolledWindow, TextView};
 
 const APP_ID : &str = "org.termio.Termio";
+const DEFAULT_WINDOW_WIDTH : i32 = 320;
+const DEFAULT_WINDOW_HEIGHT : i32 = 200;
 
 pub fn run_ui() -> glib::ExitCode {
      let app = Application::builder().application_id(APP_ID).build();
@@ -16,8 +18,8 @@ fn build_ui(app: &Application) {
     let window = ApplicationWindow::builder()
     .application(app)
     .title("Termio Terminal Emulator")
-    .default_width(320)
-    .default_height(200)
+    .default_width(DEFAULT_WINDOW_WIDTH)
+    .default_height(DEFAULT_WINDOW_HEIGHT)
     .build();
 
     // TextView inside a ScrolledWindow
