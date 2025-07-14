@@ -5,4 +5,7 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-gtk.workspace = true
+env_logger = "0.11.8"
+log = "0.4.27"
+pixels = "0.15.0"
+winit.workspace = true

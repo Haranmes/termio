@@ -1,0 +1,138 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'termio'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=termio",
+                    "--package=termio"
+                ],
+                "filter": {
+                    "name": "termio",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'termio'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=termio",
+                    "--package=termio"
+                ],
+                "filter": {
+                    "name": "termio",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'termio_ui'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=termio-ui"
+                ],
+                "filter": {
+                    "name": "termio_ui",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'termio-ui'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=termio-ui",
+                    "--package=termio-ui"
+                ],
+                "filter": {
+                    "name": "termio-ui",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'termio-ui'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=termio-ui",
+                    "--package=termio-ui"
+                ],
+                "filter": {
+                    "name": "termio-ui",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'termio-windows'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=termio-windows",
+                    "--package=termio-windows"
+                ],
+                "filter": {
+                    "name": "termio-windows",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'termio-windows'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=termio-windows",
+                    "--package=termio-windows"
+                ],
+                "filter": {
+                    "name": "termio-windows",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

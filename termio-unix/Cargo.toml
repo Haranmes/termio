@@ -1,8 +1,0 @@
-[package]
-description = "Termio's *nix implementation"
-name = "termio-unix"
-version.workspace = true
-edition.workspace = true
-
-[dependencies]
-gtk.workspace = true
